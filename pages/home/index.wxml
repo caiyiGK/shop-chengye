@@ -1,0 +1,86 @@
+<view class="index">
+
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}"
+            interval="{{interval}}"
+            indicator-color="{{indicatorColor}}"
+            indicator-active-color="indicatorActiveColor"
+            class="banner">
+            <block wx:for="{{[1, 2, 3, 4]}}" wx:key="{{index}}">
+                <swiper-item class="banner-item">
+                    <avigator class="banner-link"></avigator>
+                    <!-- <image src="{{item}}" class="slide-image" width="355" height="150"/> -->
+                </swiper-item>
+            </block>
+    </swiper>
+
+    <view class="quick">
+        <block wx:for="{{quickData}}" wx:key="{{index}}">
+            <view class="quick-item">
+                <navigator class="quick-link">
+                    <text>{{item.text}}</text>
+                </navigator>
+            </view>
+        </block>
+    </view>
+
+    <view class="news">
+        <view class="single-hd">
+            <text>新品上市</text>
+        </view>
+        <view class="news-con">
+            <swiper indicator-dots="{{indicatorDots}}"
+                    autoplay="{{autoplay}}"
+                    interval="{{interval}}"
+                    indicator-color="{{indicatorColor}}"
+                    indicator-active-color="indicatorActiveColor"
+                    class="news-banner">
+                    <block wx:for="{{[1, 2, 3, 4]}}" wx:key="{{index}}">
+                        <swiper-item class="news-banner-item">
+                            <avigator class="news-banner-link"></avigator>
+                            <!-- <image src="{{item}}" class="slide-image" width="355" height="150"/> -->
+                        </swiper-item>
+                    </block>
+            </swiper>
+        </view>
+    </view>
+
+    <view class="products">
+        <view class="single-hd">
+            <text>六大护肤专科</text>
+        </view>
+        <view class="products-ad">
+            <block wx:for="{{[1, 2, 3, 4]}}" wx:key="{{index}}">
+                <navigator class="products-aditem"></navigator>
+            </block>
+        </view>
+    </view>
+
+    <view class="category">
+        <view class="single-hd">
+            <text>护肤流程精确选择</text>
+        </view>
+        <view class="category-con">
+            <block wx:for="{{categoryData}}" wx:key="{{index}}">
+                <navigator class="category-item">
+                    <view class="category-pic"></view>
+                    <view class="category-text">{{item.text}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+
+    <view class="brief">
+        <navigator class="brief-link">
+            <!-- <image src="{{item}}" class="slide-image" width="355" height="150"/> -->
+        </navigator>
+        <navigator class="brief-link">
+            <!-- <image src="{{item}}" class="slide-image" width="355" height="150"/> -->
+        </navigator>
+    </view>
+
+    <view class="service">
+        <navigator class="service-link"></navigator>
+    </view>
+
+</view>

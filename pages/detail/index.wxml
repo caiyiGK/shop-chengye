@@ -1,0 +1,70 @@
+<view class="detail">
+    <view class="tab">
+        <block wx:for="{{tabData}}" wx:key="{{index}}">
+            <view class="tab-item {{tabActive == index ? 'active' : ''}}" 
+                bindtap="handleTab"
+                data-index="{{index}}">{{item}}</view>
+        </block>
+    </view>
+
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}"
+            interval="{{interval}}"
+            indicator-color="{{indicatorColor}}"
+            indicator-active-color="indicatorActiveColor"
+            class="banner">
+            <block wx:for="{{[1, 2, 3, 4]}}" wx:key="{{index}}">
+                <swiper-item class="banner-item">
+                    <avigator class="banner-link"></avigator>
+                    <!-- <image src="{{item}}" class="slide-image" width="355" height="150"/> -->
+                </swiper-item>
+            </block>
+    </swiper>
+
+    <view class="comment">
+        <view class="comment-hd">
+            宝贝评价（2328）
+            <avigator class="comment-link">查看全部</avigator>
+        </view>
+        <view class="comment-con">
+            <view class="comment-item">
+                <view class="comment-user">
+                    <view class="comment-pic"></view>
+                    <text class="comment-name">卧**槽</text>
+                </view>
+                <view class="comment-text">是正品，很好用，会回购</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="content">
+        <view class="content-hd">
+            <text>详情</text>
+        </view>
+        <view class="content-con">
+            <!-- <image src="{{item}}" class="slide-image" width="355" height="150"/> -->
+        </view>
+    </view>
+
+    <view class="control">
+        <view class="control-link">
+            <avigator>
+                <view class="control-ipic"></view>
+                <text class="control-itext">首页</text>
+            </avigator>
+            <avigator>
+                <view class="control-ipic"></view>
+                <text class="control-itext">客服</text>
+            </avigator>
+            <avigator>
+                <view class="control-ipic"></view>
+                <text class="control-itext">收藏</text>
+            </avigator>
+        </view>
+        <view class="control-btn">
+            <view class="control-btn-add">加入购物车</view>
+            <view class="control-btn-buy">立即购买</view>
+        </view>
+    </view>
+
+</view>

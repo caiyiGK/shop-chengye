@@ -1,0 +1,43 @@
+/* single */
+page {background-color: rgba(245,245,245,1);}
+.single-hd {height: 44rpx;text-align: center;margin-bottom: 24rpx;}
+.single-hd text {font-size: 32rpx;color: #333;line-height: 44rpx;position: relative;padding: 0 80rpx;display: inline-block;}
+.single-hd text:before,
+.single-hd text:after {position: absolute;content: '';display: block;width: 70rpx;height: 4rpx;background-color: #333;top: 50%;margin-top: -2rpx;}
+.single-hd text:before {left: 0;}
+.single-hd text:after {right: 0;}
+
+/* banner */
+.banner {height: 490rpx;width: 750rpx;}
+.banner-item {height: 490rpx!important;width: 750rpx!important;}
+.banner-link {height: 490rpx;width: 750rpx;display: block;background-color: #e5e5e5;}
+
+/* news-banner */
+.news-banner {height: 390rpx;width: 750rpx;padding-bottom: 20rpx;}
+.news-banner-item {height: 390rpx!important;width: 750rpx!important;}
+.news-banner-link {height: 390rpx;width: 750rpx;display: block;background-color: #e5e5e5;}
+
+
+/* quick */
+.quick {display: flex;flex-wrap: wrap;padding-top: 26rpx;}
+.quick-item {box-sizing: border-box;width: 336rpx;margin: 0 0 26rpx 26rpx;overflow: hidden;border-radius: 10rpx;}
+.quick-link {position: relative;display: block;width: 336rpx;height: 254rpx;background-color: #e5e5e5;}
+.quick-link text {font-size: 32rpx;color: #2d2d2d;position: absolute;left: 20rpx;bottom: 10rpx;}
+
+/* products */
+.products-ad {padding: 0 28rpx;}
+.products-aditem {width: 694rpx;height: 260rpx;display: block;background-color: #e5e5e5;overflow: hidden;margin-bottom: 28rpx;}
+
+/* category */
+.category-con {display: flex;flex-wrap: wrap;background-color: #FFF;padding-top: 23.6rpx;}
+.category-item {width: 158rpx;margin-left: 23.6rpx;margin-bottom: 23.6rpx;}
+.category-pic {width: 158rpx;height: 158rpx;display: block;background-color: #e5e5e5;margin-bottom: 10rpx;}
+.category-text {font-size: 22rpx;color: #2d2d2d;line-height: 32rpx;height: 32rpx;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;display: block;text-align: center;}
+
+/* brief */
+.brief {width: 750rpx;}
+.brief-link {display: block;width: 750rpx;}
+
+/* service */
+.service {position: fixed;top: 568rpx;right: 20rpx;z-index: 10;}
+.service-link {display: block;width: 88rpx;height: 88rpx;background-color: #e5e5e5;border-radius: 50%;overflow: hidden;}
