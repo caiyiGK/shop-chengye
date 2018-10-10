@@ -4,14 +4,17 @@ Page({
      * tabId 切换 ['商品' = 0, '详情' = 1, '评价' = 2]
      */
     handleTab (e) {
+        let index = e.currentTarget.dataset.index;
         this.setData({
-            tabActive: e.currentTarget.dataset.index
+            tabActive: index,
+            toView: 'archor_' + index
         })
     },
 
     data: {
         tabData: ['商品', '详情', '评价'],
         tabActive: 0,
+        toView: '',
 
         indicatorDots: true, // 是否显示面板指示点
         autoplay: true, // 是否自动切换

@@ -1,11 +1,14 @@
 {
   "pages":[
     "pages/detail/index",
+    "pages/cart/index",
     "pages/home/index",
     "pages/category/index",
     "pages/notes/index",
-    "pages/cart/index",
     "pages/member/index",
+
+    "pages/address-add/index",
+    "pages/address-list/index",
 
     "pages/index/index",
     "pages/logs/logs"
@@ -23,33 +26,23 @@
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "首页",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "首页"
       },
       {
         "pagePath": "pages/category/index",
-        "text": "分类",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "分类"
       },
       {
         "pagePath": "pages/notes/index",
-        "text": "达人笔记",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "达人笔记"
       },
       {
         "pagePath": "pages/cart/index",
-        "text": "购物车",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "购物车"
       },
       {
         "pagePath": "pages/member/index",
-        "text": "会员服务",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "会员服务"
       }
     ]
   },

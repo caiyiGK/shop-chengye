@@ -1,0 +1,32 @@
+<view class="address-add">
+
+    <view class="add">
+        <view class="add-group">
+            <input type="text" placeholder="收货人" placeholder-class="gray"/>
+        </view>
+        <view class="add-group icon">
+            <input type="number" placeholder="手机号码" placeholder-class="gray"/>
+            <label>+86</label>
+        </view>
+        <view class="add-group icon">
+            <text>所在地区</text>
+        </view>
+        <view class="add-group textarea">
+            <textarea placeholder="详细地址：街道、楼牌号等" maxlength="maxLength" placeholder-class="gray"></textarea>
+        </view>
+    </view>
+
+    <view class="add">
+        <view class="add-cell">
+            <label>设置为默认地址</label>
+            <switch type="switch" color="rgba(255,200,196,1)" bindchange="handleSetDefault" />
+        </view>
+    </view>
+
+    <view class="global-btn" style="margin-top: 80rpx;">
+        <view class="global-btn-text red">
+            保存并使用
+        </view>
+    </view>
+
+</view>

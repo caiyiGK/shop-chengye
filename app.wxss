@@ -1,10 +1,5 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+/** global **/
+.global-btn {padding: 0 30rpx;display: flex;}
+.global-btn-text {font-size: 28rpx;flex: 1;display: flex;justify-content: center;align-items: center;border-radius: 8rpx;height: 80rpx;color: #FFF;}
+.global-btn-text.red {background-color: #DA2027;}
+

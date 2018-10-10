@@ -1,3 +1,56 @@
-<view class="index">
-  购物车
+<view class="cart">
+    <view class="hd">
+        <view class="hd-text">
+            购物车
+            <text bindtap="handleManage">管理</text>
+        </view>
+        <view class="hd-count">
+            共20件商品
+        </view>
+    </view>
+    <view class="products">
+        <scroll-view
+            scroll-y="true"
+            scroll-with-animation="true"
+            class="products-scroll">
+            <view class="products-con">
+                <view class="products-item"
+                wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}}"
+                wx:key="{{index}}">
+                    <label class="products-round"></label>
+                    <view class="products-pic"></view>
+                    <view class="products-info">
+                        <view class="title">城野医生亲研EGF修护精华寡肽原液淡化祛痘印痘疤 高能原液精</view>
+                        <view class="spec">
+                            <text>白色</text>
+                            <text>(10ml)*1+(10g)*1</text>
+                        </view>
+                        <view class="products-param">
+                            <label class="price">¥320</label>
+                            <view class="products-control">
+                                <label class="btn btn-reduce">-</label>
+                                <input type="number" value="1" />
+                                <label class="btn btn-add">+</label>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <view class="control">
+        <view class="control-all">
+            <label class='control-round'></label>
+            全选
+        </view>
+        <view class="control-sub {{isManage ? '' : 'active'}}">
+            合计：<view class="price"><label>¥</label>00.00</view>
+            <view class="sub">结算(0)</view>
+        </view>
+        <view class="control-sub {{isManage ? 'active' : ''}}">
+            <view class="btn orange">移入收藏夹</view>
+            <view class="btn">删除</view>
+        </view>
+    </view>
 </view>

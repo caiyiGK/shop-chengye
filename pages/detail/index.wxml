@@ -1,18 +1,23 @@
-<view class="detail">
-    <view class="tab">
-        <block wx:for="{{tabData}}" wx:key="{{index}}">
-            <view class="tab-item {{tabActive == index ? 'active' : ''}}" 
-                bindtap="handleTab"
-                data-index="{{index}}">{{item}}</view>
-        </block>
-    </view>
+<view class="tab">
+    <block wx:for="{{tabData}}" wx:key="{{index}}">
+        <view class="tab-item {{tabActive == index ? 'active' : ''}}" 
+            bindtap="handleTab"
+            data-index="{{index}}">{{item}}</view>
+    </block>
+</view>
 
+<scroll-view
+    scroll-y="true"
+    scroll-with-animation="true"
+    scroll-into-view="{{toView}}"
+    class="detail">
     <swiper indicator-dots="{{indicatorDots}}"
             autoplay="{{autoplay}}"
             interval="{{interval}}"
             indicator-color="{{indicatorColor}}"
             indicator-active-color="indicatorActiveColor"
-            class="banner">
+            class="banner"
+            id="archor_0">
             <block wx:for="{{[1, 2, 3, 4]}}" wx:key="{{index}}">
                 <swiper-item class="banner-item">
                     <avigator class="banner-link"></avigator>
@@ -21,7 +26,33 @@
             </block>
     </swiper>
 
-    <view class="comment">
+    <view class="info">
+        <view class="info-desc">
+            <text>日本品牌 海外直供</text>
+        </view>
+        <view class="info-hd">城野医生亲研收缩毛孔去黑头控油收敛保湿 化妆水【日本直邮】</view>
+        <view class="info-price">
+            <label class="yen">¥</label>99.00～<label class="yen">¥</label>119.00<label class="info-tag">商品优惠</label>
+        </view>
+        <view class="info-price-deline">¥129.00起</view>
+        <view>
+            <label class="info-tag">免邮费</label>
+            <view class="info-share">分享</view>
+        </view>
+        <view class="info-count">
+            已售：1697件
+            <text>日本</text>
+        </view>
+    </view>
+
+    <view class="spec">
+        <view class="spec-cell">
+            <label>选择</label>
+            <text>配送至:闵行区，已选“100ml”</text>
+        </view>
+    </view>
+
+    <view class="comment" id="archor_2">
         <view class="comment-hd">
             宝贝评价（2328）
             <avigator class="comment-link">查看全部</avigator>
@@ -37,34 +68,35 @@
         </view>
     </view>
 
-    <view class="content">
+    <view class="content" id="archor_1" style="height: 5000rpx;">
         <view class="content-hd">
             <text>详情</text>
         </view>
         <view class="content-con">
+            图片循环
             <!-- <image src="{{item}}" class="slide-image" width="355" height="150"/> -->
         </view>
     </view>
 
-    <view class="control">
-        <view class="control-link">
-            <avigator>
-                <view class="control-ipic"></view>
-                <text class="control-itext">首页</text>
-            </avigator>
-            <avigator>
-                <view class="control-ipic"></view>
-                <text class="control-itext">客服</text>
-            </avigator>
-            <avigator>
-                <view class="control-ipic"></view>
-                <text class="control-itext">收藏</text>
-            </avigator>
-        </view>
-        <view class="control-btn">
-            <view class="control-btn-add">加入购物车</view>
-            <view class="control-btn-buy">立即购买</view>
-        </view>
-    </view>
+</scroll-view>
 
+<view class="control">
+    <view class="control-link">
+        <avigator>
+            <view class="control-ipic"></view>
+            <text class="control-itext">首页</text>
+        </avigator>
+        <avigator>
+            <view class="control-ipic"></view>
+            <text class="control-itext">客服</text>
+        </avigator>
+        <avigator>
+            <view class="control-ipic"></view>
+            <text class="control-itext">收藏</text>
+        </avigator>
+    </view>
+    <view class="control-btn">
+        <view class="control-btn-add">加入购物车</view>
+        <view class="control-btn-buy">立即购买</view>
+    </view>
 </view>

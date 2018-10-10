@@ -1,0 +1,40 @@
+<view class="address-list">
+
+    <view class="list">
+        <view class="list-item">
+            <view class="list-del"></view>
+            <view class="list-user">
+                <text>张咩咩</text>
+                <text>13265587430</text>
+            </view>            
+            <view class="list-info">
+                <text>上海市 上海市 普陀区 金沙江路1989号 1101室</text>
+            </view>
+            <view class="list-set">
+                <label class="active">设为默认</label>
+                <navigator class="list-edit">编辑</navigator>
+            </view>
+        </view>
+        <view class="list-item">
+            <view class="list-del"></view>
+            <view class="list-user">
+                <text>张咩咩</text>
+                <text>13265587430</text>
+            </view>            
+            <view class="list-info">
+                <text>上海市 上海市 普陀区 金沙江路1989号 1101室</text>
+            </view>
+            <view class="list-set">
+                <label>设为默认</label>
+                <navigator class="list-edit">编辑</navigator>
+            </view>
+        </view>
+    </view>
+
+    <view class="global-btn">
+        <navigator class="global-btn-text red">
+            新增收货地址
+        </navigator>
+    </view>
+
+</view>
